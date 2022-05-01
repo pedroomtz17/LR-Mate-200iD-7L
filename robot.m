@@ -8,7 +8,7 @@ S23=DHC(0,l3,q3,0);
 S34=DHC(pi/2,l4,q4,l5);  
 S45=DHC(-pi/2,0,q5,0);
 S56=DHC(pi/2,0,q6,0);
-S67=rotx(pi)*roty(pi/2)*transl(l4,0,0);
+S67=rotx(pi)*roty(pi/2)*transl(l6,0,0);
 
 CD=S01*S12*S23*S34*S45*S56*S67;
 
@@ -33,7 +33,7 @@ frame(eye(4),'r',0.2)
 % frame(S04,'g',0.2)
 % frame(S05,'b',0.2)
 % frame(S06,'r',0.2)
-frame(S07,'g',0.2)
+%frame(S07,'g',0.2)
 grid on 
 n=2;
 axis([-1.5 1.5 -1.5 1.5 -1.5 1.5])
