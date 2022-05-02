@@ -5,8 +5,7 @@ syms l1 l2 l3 l4 l5 l6 pi
 S01=DHC(0,0,q1,l1);
 S12=DHC(pi/2,l2,pi/2+q2,0);
 S23=DHC(0,l3,q3,0);
-% S34=DHC(pi/2,l4,q4,l5);  
-S34=rotx(pi/2)*transl(l4,0,0)*transl(0,0,l5)*rotz(q6);
+S34=DHC(pi/2,l4,q4,l5);  
 S45=DHC(-pi/2,0,q5,0);
 S56=DHC(pi/2,0,q6,0);
 S67=rotx(pi)*roty(pi/2)*transl(l6,0,0);
