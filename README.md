@@ -3,4 +3,4 @@
 
 ## Parámetros Denavit-Hartenberg 
 
-<img src="/imagenes/ParámetrosDH.png" width="761" height="585">
+<img src="/Images/ParámetrosDH.PNG" width="761" height="585">
