@@ -24,21 +24,21 @@ Comprobación
 - Posición Inicial
 ```sh
         xe=0.55;ye=0;ze=0.805;
-        alfa=0;betha=-pi/2;gamma=-pi;
+        alfa=0;betha=0;gamma=0;
  ```
 <img src="/Images/Coordenada_PosicionInicial.jpg" width="540" height="400">
 
 - Posición Intermedia
 ```sh
         xe=0.824199;ye=0.02975;ze=0.340979;
-        alfa=-pi;betha=0;gamma=0;
+        alfa=0;betha=0;gamma=0;
  ```
 <img src="/Images/Coordenada_PosicionIntermedia.jpg" width="540" height="400">
 
 - Posición Final
 ```sh
         xe=0.158752;ye=0.790429;ze=0.492442;
-        alfa=-pi;betha=deg2rad(-18.779);gamma=deg2rad(78.415);
+        alfa=0;betha=0;gamma=0;
  ```
 <img src="/Images/Coordenada_PosiciFinal.jpg" width="540" height="400">
 
