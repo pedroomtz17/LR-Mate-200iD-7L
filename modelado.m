@@ -136,7 +136,11 @@ J07_simp=subs(J07,{cos(pi),sin(pi/2),sin(pi),cos(pi/2)},{1,1,0,0});
 %Comprobación de independencia lineal 
 rank(J07); 
  
+<<<<<<< HEAD
 DET=det(J07_simp)
+=======
+DET=det(J07_simp);
+>>>>>>> cba1e1d7a3ab57fd382f378fccc9dc41c267111e
 %DET_simp=simplify(DET);
 
 fileID=fopen('DET.txt','w');
