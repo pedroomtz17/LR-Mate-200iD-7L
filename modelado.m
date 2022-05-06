@@ -12,7 +12,7 @@ S23=DHC(0,l3,q3,0);
 S34=DHC(pi/2,l4,q4,l5);  
 S45=DHC(-pi/2,0,q5,0);
 S56=DHC(pi/2,0,q6,0);
-%S67=DHC(0,0,0,l6);
+% S67=DHC(0,0,0,l6);
 S67=rotx(pi)*roty(pi/2)*transl(l6,0,0);
 
 S02=S01*S12;
@@ -119,6 +119,12 @@ J07 =[diff(v07(1),q1p) diff(v07(1),q2p) diff(v07(1),q3p) diff(v07(1),q4p) diff(v
       diff(w07(3),q1p) diff(w07(3),q2p) diff(w07(3),q3p) diff(w07(3),q4p) diff(w07(3),q5p) diff(w07(3),q6p)
       ];
   
+J07_simp1=subs(J07,sin(pi),0);
+J07_simp2=subs(J07_simp1,cos(pi/2),0);
+J07_simp3=subs(J07_simp2,sin(pi/2),1);
+J07_simp4=subs(J07_simp3,cos(pi),1);
+J07_simp=subs(J07,{cos(pi),sin(pi/2),sin(pi),cos(pi/2)},{1,1,0,0});
+  
 %JACOBIANO RELATIVO
 J77r =[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v77(1),q5p) diff(v77(1),q6p);...
       diff(v77(2),q1p) diff(v77(2),q2p) diff(v77(2),q3p) diff(v77(2),q4p) diff(v77(2),q5p) diff(v77(2),q6p);...
@@ -127,30 +133,23 @@ J77r =[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(
       diff(w77(2),q1p) diff(w77(2),q2p) diff(w77(2),q3p) diff(w77(2),q4p) diff(w77(2),q5p) diff(w77(2),q6p);...
       diff(w77(3),q1p) diff(w77(3),q2p) diff(w77(3),q3p) diff(w77(3),q4p) diff(w77(3),q5p) diff(w77(3),q6p)
       ];
- 
+  
+J77r_simp=subs(J77r,{cos(pi),sin(pi/2),sin(pi),cos(pi/2)},{1,1,0,0});
+J77Inv=inv(J77r_simp);
+J77Inv_simp=simplify(J77Inv);
   %Estas sustituciones son validas por que: 
   %1. No hay un valor de -pi en los argumentos de las funciones
   %trigonométricas
   %2. La función subs sustituye la expresión previa en la matriz con el valor nuevo y evalua 
   %relaizando toda el álgebra y el aritmética correspondiente
   %3. No modifica la dimensión de la matriz
-  
-J07_simp1=subs(J07,sin(pi),0);
-J07_simp2=subs(J07_simp1,cos(pi/2),0);
-J07_simp3=subs(J07_simp2,sin(pi/2),1);
-J07_simp4=subs(J07_simp3,cos(pi),1);
-
-J07_simp=subs(J07,{cos(pi),sin(pi/2),sin(pi),cos(pi/2)},{1,1,0,0});
-J77r_simp=subs(J77r,{cos(pi),sin(pi/2),sin(pi),cos(pi/2)},{1,1,0,0});
-J77Inv=inv(J77r_simp);
-J77Inv_simp=simplify(J77Inv);
 
 %Comprobación de independencia lineal 
-rank(J07); 
- 
+rank(J77r_simp); 
+
+%DET_simp=simplify(DET);
 DET=det(J77r_simp);
 SDET = simplify(DET,'Steps',10);
-
 
 fileID=fopen('DET.txt','w');
 fprintf(fileID,'%s',SDET);
