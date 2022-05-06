@@ -61,15 +61,50 @@ J77r_simp =
  
  l3*cos(2*q4)*cos(2*q5)*cos(2*q6)^2*sin(q5)*(l2*l5*cos(q3) - l4^2*cos(q2) - l2*l4*sin(q3) + l4*l5*sin(q2) + l4^2*cos(q2)*cos(q3)^2 + l5^2*cos(q2)*cos(q3)^2 + l3*l4*sin(q2)*sin(q3) - 2*l4*l5*cos(q3)^2*sin(q2) + l4^2*cos(q3)*sin(q2)*sin(q3) - l5^2*cos(q3)*sin(q2)*sin(q3) - l3*l5*cos(q3)*sin(q2))
   ```
+ 
+ ## Trayectoria
+ 
+ #### Para abordar el problema de la trayectoria, se plantearon 3 perfiles quínticos empleando líneas rectas cuyos puntos de inicio y fin se tomaron de una simulación elaborada con ayuda del software RoboDK.
+ 
+ <img src="/Images/simu_roboDK.png">
+ 
+ #### A continuación se muestran el trazo del robot su determinante y las respectivas gráficas en los espacios articulares y cartesianos.
+ 
+ ### *Tramo 1*
+ 
+ <img src="https://media.giphy.com/media/iOgEQ1rbIF74oCvsq5/giphy.gif" width="560" height="420">
+
+ #### Determinante
+  <img src="/Images/Det_tramo1.jpg">
+
+ #### Espacio articular
+  <img src="/Images/espacio_articular_t1.png">
   
-Tramo 1
+  #### Espacio cartesiano
+  <img src="/Images/espacio_cartesiano_t1.png">
+ 
+### *Tramo 2*
+ <img src="https://media.giphy.com/media/Qm0WXDODcJbrVZdVhL/giphy.gif" width="560" height="420">
+ 
+ #### Determinante
+  <img src="/Images/Det_tramo2.jpg">
 
-<img src="https://media.giphy.com/media/iOgEQ1rbIF74oCvsq5/giphy.gif" width="560" height="420">
+ #### Espacio articular
+  <img src="/Images/espacio_articular_t2.png">
+  
+  #### Espacio cartesiano
+  <img src="/Images/espacio_cartesiano_t2.png">
+  
+### *Tramo 3*
+ <img src="https://media.giphy.com/media/A5lkOuOuDN4bQ3Mz7a/giphy.gif" width="560" height="420">
+ #### Determinante
+  <img src="/Images/Det_tramo3.jpg">
 
-Tramo 2
+ #### Espacio articular
+  <img src="/Images/espacio_articular_t3.png">
+  
+  #### Espacio cartesiano
+  <img src="/Images/espacio_cartesiano_t3.png">
 
-<img src="https://media.giphy.com/media/Qm0WXDODcJbrVZdVhL/giphy.gif" width="560" height="420">
-
-Tramo 3
-
-<img src="https://media.giphy.com/media/A5lkOuOuDN4bQ3Mz7a/giphy.gif" width="560" height="420">
+ ## Rango de movimiento para las articulaciones
+  #### El rango de movimiento de articulaciones indicado por el fabricante (FANUC), se observa que el rango de movimimiento de las articulaciones es en términos generales amplio. Para el caso de la trayectoria propuesta para cumplir con la tarea de clasifcar tapas de plástico, se observa que ninguno de los tramos viola este rango, viéndose 
