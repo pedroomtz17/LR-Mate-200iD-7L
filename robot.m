@@ -33,9 +33,9 @@ frame(eye(4),'r',0.2)
 % frame(S04,'g',0.2)
 % frame(S05,'b',0.2)
 % frame(S06,'r',0.2)
-%frame(S07,'g',0.2)
+frame(S07,'g',0.2)
 grid on 
 n=2;
-axis([-1.5 1.5 -1.5 1.5 -1.5 1.5])
+axis([-1 1.5 -1.5 1.5 -1.5 1.5])
 
 end 
