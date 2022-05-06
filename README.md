@@ -61,3 +61,15 @@ J77r_simp =
  
  l3*cos(2*q4)*cos(2*q5)*cos(2*q6)^2*sin(q5)*(l2*l5*cos(q3) - l4^2*cos(q2) - l2*l4*sin(q3) + l4*l5*sin(q2) + l4^2*cos(q2)*cos(q3)^2 + l5^2*cos(q2)*cos(q3)^2 + l3*l4*sin(q2)*sin(q3) - 2*l4*l5*cos(q3)^2*sin(q2) + l4^2*cos(q3)*sin(q2)*sin(q3) - l5^2*cos(q3)*sin(q2)*sin(q3) - l3*l5*cos(q3)*sin(q2))
   ```
+  
+Tramo 1
+
+<img src="https://media.giphy.com/media/iOgEQ1rbIF74oCvsq5/giphy.gif" width="560" height="420">
+
+Tramo 2
+
+<img src="https://media.giphy.com/media/Qm0WXDODcJbrVZdVhL/giphy.gif" width="560" height="420">
+
+Tramo 3
+
+<img src="https://media.giphy.com/media/A5lkOuOuDN4bQ3Mz7a/giphy.gif" width="560" height="420">
