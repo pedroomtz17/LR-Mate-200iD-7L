@@ -1,9 +1,9 @@
 clc; close all; clear all;
 parametros
-
+% 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % Perfil quintico (TRAMO 1)
-% % Univerdidad Nacional Autónoma de México
+% % Universididad Nacional Autónoma de México
 % % Robótica
 % % Noé Alfredo Martínez Sánchez
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,11 +83,11 @@ parametros
 % hold on
 % plot(time,zv,'b');
 % hold on
-% plot(time,a1p,'r');
+% plot(time,a1p,'r*');
 % hold on
-% plot(time,a2p,'g');
+% plot(time,a2p,'g*');
 % hold on
-% plot(time,a3p,'b');
+% plot(time,a3p,'b*');
 % hold on
 % title('Velocidad espacio cartesiano T1')
 % xlabel('Tiempo [s]')
@@ -122,11 +122,11 @@ parametros
 % hold on
 % plot(time,za,'b');
 % hold on
-% plot(time,a1pp,'r');
+% plot(time,a1pp,'r*');
 % hold on
-% plot(time,a2pp,'g');
+% plot(time,a2pp,'g*');
 % hold on
-% plot(time,a3pp,'b');
+% plot(time,a3pp,'b*');
 % hold on
 % title('Aceleración espacio cartesiano T1')
 % xlabel('Tiempo [s]')
@@ -194,15 +194,15 @@ parametros
 % 
 % %Graficas de posición de las juntas
 % figure(5)
-% plot(time,rad2deg(q1),'rd');
+% plot(time,rad2deg(q1),'r');
 % hold on
-% plot(time,rad2deg(q2),'gd');
-% plot(time,rad2deg(q3),'bd');
+% plot(time,rad2deg(q2),'g');
+% plot(time,rad2deg(q3),'b');
 % plot(time,rad2deg(q4),'r*');
 % plot(time,rad2deg(q5),'g*');
 % plot(time,rad2deg(q6),'b*');
 % title('Espacio de juntas T1');
-% xlabel('Pasos');
+% xlabel('Tiempo [s]');
 % ylabel('Grados');
 % legend('q1p','q2p','q3p','q4p','q5p','q6p');
 % grid on;
@@ -214,37 +214,37 @@ parametros
 % 
 % %Graficas de velocidad articular
 % figure(7)
-% plot(time,rad2deg(q1p),'rd');
+% plot(time,rad2deg(q1p),'r');
 % hold on
-% plot(time,rad2deg(q2p),'gd');
-% plot(time,rad2deg(q3p),'bd');
+% plot(time,rad2deg(q2p),'g');
+% plot(time,rad2deg(q3p),'b');
 % plot(time,rad2deg(q4p),'r*');
 % plot(time,rad2deg(q5p),'g*');
 % plot(time,rad2deg(q6p),'b*');
 % title('Espacio de juntas en velocidad T1');
-% xlabel('Pasos');
+% xlabel('Tiempo [s]');
 % ylabel('Grados');
 % legend('q1p','q2p','q3p','q4p','q5p','q6p');
 % grid on;
 % 
 % %Graficas de velocidad articular
 % figure(8)
-% plot(time,rad2deg(q1pp),'rd');
+% plot(time,rad2deg(q1pp),'r');
 % hold on
-% plot(time,rad2deg(q2pp),'gd');
-% plot(time,rad2deg(q3pp),'bd');
+% plot(time,rad2deg(q2pp),'g');
+% plot(time,rad2deg(q3pp),'b');
 % plot(time,rad2deg(q4pp),'r*');
 % plot(time,rad2deg(q5pp),'g*');
 % plot(time,rad2deg(q6pp),'b*');
 % title('Espacio de juntas en aceleración T1');
-% xlabel('Pasos');
+% xlabel('Tiempo [s]');
 % ylabel('Grados');
 % legend('q1pp','q2pp','q3pp','q4pp','q5pp','q6pp');
 % grid on;
 % % 
 % % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % % Perfil quintico (TRAMO 2)
-% % % Univerdidad Nacional Autónoma de México
+% % % Universididad Nacional Autónoma de México
 % % % Robótica
 % % % Noé Alfredo Martínez Sánchez
 % % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -285,11 +285,11 @@ parametros
 % hold on
 % plot(time,z,'b');
 % hold on
-% plot(time,a1,'r');
+% plot(time,a1,'r*');
 % hold on
-% plot(time,a2,'g');
+% plot(time,a2,'g*');
 % hold on
-% plot(time,a3,'b');
+% plot(time,a3,'b*');
 % hold on
 % title('Posición espacio cartesiano T2')
 % xlabel('Tiempo[s]')
@@ -324,11 +324,11 @@ parametros
 % hold on
 % plot(time,zv,'b');
 % hold on
-% plot(time,a1p,'r');
+% plot(time,a1p,'r*');
 % hold on
-% plot(time,a2p,'g');
+% plot(time,a2p,'g*');
 % hold on
-% plot(time,a3p,'b');
+% plot(time,a3p,'b*');
 % hold on
 % title('Velocidad espacio cartesiano T2')
 % xlabel('Tiempo [s]')
@@ -364,11 +364,11 @@ parametros
 % hold on
 % plot(time,za,'b');
 % hold on
-% plot(time,a1pp,'r');
+% plot(time,a1pp,'r*');
 % hold on
-% plot(time,a2pp,'g');
+% plot(time,a2pp,'g*');
 % hold on
-% plot(time,a3pp,'b');
+% plot(time,a3pp,'b*');
 % hold on
 % title('Aceleración espacio cartesiano T2')
 % xlabel('Tiempo [s]')
@@ -435,15 +435,15 @@ parametros
 % 
 % %Graficas de posición de las juntas
 % figure(13)
-% plot(time,rad2deg(q1),'rd');
+% plot(time,rad2deg(q1),'r');
 % hold on
-% plot(time,rad2deg(q2),'gd');
-% plot(time,rad2deg(q3),'bd');
+% plot(time,rad2deg(q2),'g');
+% plot(time,rad2deg(q3),'b');
 % plot(time,rad2deg(q4),'r*');
 % plot(time,rad2deg(q5),'g*');
 % plot(time,rad2deg(q6),'b*');
-% title('Espacio de juntas T2');
-% xlabel('Pasos');
+% title('Espacio de juntas en posición T2');
+% xlabel('Tiempo [s]');
 % ylabel('Grados');
 % legend('q1p','q2p','q3p','q4p','q5p','q6p');
 % grid on;
@@ -455,38 +455,38 @@ parametros
 % 
 % %Graficas de velocidad articular
 % figure(15)
-% plot(time,rad2deg(q1p),'rd');
+% plot(time,rad2deg(q1p),'r');
 % hold on
-% plot(time,rad2deg(q2p),'gd');
-% plot(time,rad2deg(q3p),'bd');
+% plot(time,rad2deg(q2p),'g');
+% plot(time,rad2deg(q3p),'b');
 % plot(time,rad2deg(q4p),'r*');
 % plot(time,rad2deg(q5p),'g*');
 % plot(time,rad2deg(q6p),'b*');
 % title('Espacio de juntas en velocidad T2');
-% xlabel('Pasos');
+% xlabel('Tiempo [s]');
 % ylabel('Grados');
 % legend('q1p','q2p','q3p','q4p','q5p','q6p');
 % grid on;
 % 
 % %Graficas de velocidad articular
 % figure(16)
-% plot(time,rad2deg(q1pp),'rd');
+% plot(time,rad2deg(q1pp),'r');
 % hold on
-% plot(time,rad2deg(q2pp),'gd');
-% plot(time,rad2deg(q3pp),'bd');
+% plot(time,rad2deg(q2pp),'g');
+% plot(time,rad2deg(q3pp),'b');
 % plot(time,rad2deg(q4pp),'r*');
 % plot(time,rad2deg(q5pp),'g*');
 % plot(time,rad2deg(q6pp),'b*');
 % title('Espacio de juntas en aceleración T2');
-% xlabel('Pasos');
+% xlabel('Tiempo [s]');
 % ylabel('Grados');
 % legend('q1pp','q2pp','q3pp','q4pp','q5pp','q6pp');
 % grid on;
-% 
+
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Perfil quintico (TRAMO 3)
-% Univerdidad Nacional Autónoma de México
+% Universididad Nacional Autónoma de México
 % Robótica
 % Noé Alfredo Martínez Sánchez
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -530,11 +530,11 @@ plot(time,y,'g');
 hold on
 plot(time,z,'b');
 hold on
-plot(time,a1,'r');
+plot(time,a1,'r*');
 hold on
-plot(time,a2,'g');
+plot(time,a2,'g*');
 hold on
-plot(time,a3,'b');
+plot(time,a3,'b*');
 hold on
 title('Posición espacio cartesiano T3')
 xlabel('Tiempo[s]')
@@ -569,11 +569,11 @@ plot(time,yv,'g');
 hold on
 plot(time,zv,'b');
 hold on
-plot(time,a1p,'r');
+plot(time,a1p,'r*');
 hold on
-plot(time,a2p,'g');
+plot(time,a2p,'g*');
 hold on
-plot(time,a3p,'b');
+plot(time,a3p,'b*');
 hold on
 title('Velocidad espacio cartesiano T3')
 xlabel('Tiempo [s]')
@@ -609,11 +609,11 @@ plot(time,ya,'g');
 hold on
 plot(time,za,'b');
 hold on
-plot(time,a1pp,'r');
+plot(time,a1pp,'r*');
 hold on
-plot(time,a2pp,'g');
+plot(time,a2pp,'g*');
 hold on
-plot(time,a3pp,'b');
+plot(time,a3pp,'b*');
 hold on
 title('Aceleración espacio cartesiano T3')
 xlabel('Tiempo [s]')
@@ -681,15 +681,15 @@ end
 
 %Graficas de posición de las juntas
 figure(21)
-plot(time,rad2deg(q1),'rd');
+plot(time,rad2deg(q1),'r');
 hold on
-plot(time,rad2deg(q2),'gd');
-plot(time,rad2deg(q3),'bd');
+plot(time,rad2deg(q2),'g');
+plot(time,rad2deg(q3),'b');
 plot(time,rad2deg(q4),'r*');
 plot(time,rad2deg(q5),'g*');
 plot(time,rad2deg(q6),'b*');
-title('Espacio de juntas T3');
-xlabel('Pasos');
+title('Espacio de juntas en posición T3');
+xlabel('Tiempo [s]');
 ylabel('Grados');
 legend('q1p','q2p','q3p','q4p','q5p','q6p');
 grid on;
@@ -701,30 +701,30 @@ grid on
 
 %Graficas de velocidad articular
 figure(23)
-plot(time,rad2deg(q1p),'rd');
+plot(time,rad2deg(q1p),'r');
 hold on
-plot(time,rad2deg(q2p),'gd');
-plot(time,rad2deg(q3p),'bd');
+plot(time,rad2deg(q2p),'g');
+plot(time,rad2deg(q3p),'b');
 plot(time,rad2deg(q4p),'r*');
 plot(time,rad2deg(q5p),'g*');
 plot(time,rad2deg(q6p),'b*');
-title('Espacio de juntas en velocidad T1');
-xlabel('Pasos');
+title('Espacio de juntas en velocidad T3');
+xlabel('Tiempo [s]');
 ylabel('Grados');
 legend('q1p','q2p','q3p','q4p','q5p','q6p');
 grid on;
 
 %Graficas de velocidad articular
 figure(24)
-plot(time,rad2deg(q1pp),'rd');
+plot(time,rad2deg(q1pp),'r');
 hold on
-plot(time,rad2deg(q2pp),'gd');
-plot(time,rad2deg(q3pp),'bd');
+plot(time,rad2deg(q2pp),'g');
+plot(time,rad2deg(q3pp),'b');
 plot(time,rad2deg(q4pp),'r*');
 plot(time,rad2deg(q5pp),'g*');
 plot(time,rad2deg(q6pp),'b*');
 title('Espacio de juntas en aceleración T3');
-xlabel('Pasos');
+xlabel('Tiempo [s]');
 ylabel('Grados');
 legend('q1pp','q2pp','q3pp','q4pp','q5pp','q6pp');
 grid on;
