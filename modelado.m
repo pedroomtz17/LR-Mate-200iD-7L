@@ -12,8 +12,8 @@ S23=DHC(0,l3,q3,0);
 S34=DHC(pi/2,l4,q4,l5);  
 S45=DHC(-pi/2,0,q5,0);
 S56=DHC(pi/2,0,q6,0);
-S67=DHC(0,0,0,l6);
-%S67=rotx(pi)*roty(pi/2)*transl(l6,0,0);
+%S67=DHC(0,0,0,l6);
+S67=rotx(pi)*roty(pi/2)*transl(l6,0,0);
 
 S02=S01*S12;
 S03=S01*S12*S23;
