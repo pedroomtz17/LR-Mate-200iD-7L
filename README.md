@@ -3,10 +3,8 @@
 
 ## Parámetros Denavit-Hartenberg 
 
-<<<<<<< HEAD
+
 <img src="/imagenes/ParámetrosDH.png" width="761" height="585">
-=======
-<img src="/Images/ParámetrosDH.PNG" width="761" height="585">
 
 ## Cinemática Directa
 ```sh
@@ -113,4 +111,4 @@ J77r_simp =
   #### El rango de movimiento de articulaciones indicado por el fabricante (FANUC), se observa que el rango de movimimiento de las articulaciones es en términos generales amplio. Para el caso de la trayectoria propuesta para cumplir con la tarea de clasifcar tapas de plástico, se observa que ninguno de los tramos viola este rango que se muestra en la imagen inferior. 
   
   <img src="/Images/rango_articulaciones.png">
->>>>>>> Development
+
