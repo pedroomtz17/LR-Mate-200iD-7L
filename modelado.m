@@ -148,17 +148,9 @@ J77Inv_simp=simplify(J77Inv);
 %Comprobación de independencia lineal 
 rank(J07); 
  
-<<<<<<< HEAD
-<<<<<<< HEAD
-DET=det(J07_simp)
-=======
-DET=det(J07_simp);
->>>>>>> cba1e1d7a3ab57fd382f378fccc9dc41c267111e
-%DET_simp=simplify(DET);
-=======
 DET=det(J77r_simp);
 SDET = simplify(DET,'Steps',10);
->>>>>>> Pedro
+
 
 fileID=fopen('DET.txt','w');
 fprintf(fileID,'%s',SDET);
