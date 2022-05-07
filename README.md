@@ -98,6 +98,7 @@ J77r_simp =
   
 ### *Tramo 3*
  <img src="https://media.giphy.com/media/A5lkOuOuDN4bQ3Mz7a/giphy.gif" width="560" height="420">
+ 
  #### Determinante
   <img src="/Images/Det_tramo3.jpg">
 
